@@ -1,0 +1,33 @@
+.about_slide{
+    margin-top: 167px;
+    height: 1521px;
+    margin-bottom: 243px;
+}
+.previous_link{
+    width: 44px;
+    height: 44px;
+}
+.container_about{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.container_about .heading_part{
+    margin-left: 84px;
+}
+.about_more_header{
+    font-size: 64px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 113px;
+}
+.about_more_text{
+    margin-bottom: 120px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    font-family: "Inter", sans-serif;
+}
+.info{
+    margin-left: 163px;
+}

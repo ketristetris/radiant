@@ -1,0 +1,136 @@
+/* REVIEWS */
+.reviews_slider_container{
+    width: 66.15vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left:0;
+}
+
+.reviews-wrapper {
+    position: absolute;
+    margin-left: 10px;
+    width: 1544px;
+    position: relative;
+    transition: 0.6s;
+}
+
+.reviews-slide{
+    width: 386px;
+    height: 516px;
+    float: left;
+}
+.opacity_last_slide{
+    left:66.5%;
+    position: absolute;
+    z-index: 1;
+    width: 645px;
+    height: 516px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(249, 249, 249, 89%));
+}
+.reviews_navigation{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    width: 65.63vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+.services_slider_part_1, .services_slider_part_2, .services_slider_part_3, .services_slider_part_4{
+    position: relative;
+    height: 418px
+}
+
+.services_slider_1, .services_slider_2, .services_slider_3, .services_slider_4{
+    display: flex;
+    position: relative;
+    transition: 0.6s;
+
+}
+.services_slider_2, .services_slider_4{
+    left: -359px;
+}
+.services_block_2 .services_text, .services_block_4 .services_text{ 
+    margin-left: 150px;
+}
+.services_block_3 .services_text, .services_block_4 .services_text{ 
+    margin-top: 126px;
+}
+.services_wrap{
+    width: 669px;
+    overflow: hidden;
+}
+
+.slide_1, .slide_3, .slide_2, .slide_4{
+    margin-right: 104px;
+}
+
+.services_navigation_right, .services_navigation_left{
+    position: absolute;
+    z-index: 2;
+    top: 44%;
+    width: 651px;
+    display: flex;
+    justify-content: space-between;
+}
+.services_navigation_left{
+    left: 44px;
+}
+.services_navigation_right{
+    left: -22px;
+}
+.reviews-prev {
+    background-image: url(../sources/svg/button_prev.svg);
+    left: 20px;
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
+.arrow_prev_1, .arrow_prev_2, .arrow_prev_3, .arrow_prev_4{
+    background-image: url(../sources/svg/button_prev.svg);
+    position: relative;
+    left: 0;
+    width: 44px;
+    height: 44px;
+}
+.reviews-next{
+    background-image: url(../sources/svg/button_next.svg);
+    right: 20px;
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
+
+.arrow_next_1, .arrow_next_2, .arrow_next_3, .arrow_next_4{
+    background-image: url(../sources/svg/button_next.svg);
+    position: relative;
+    right: 0;
+    width: 44px;
+    height: 44px;
+}
+
+.arrow_next_1, .arrow_next_2, .arrow_next_3, .arrow_next_4, .arrow_prev_1, .arrow_prev_2, .arrow_prev_3, .arrow_prev_4, .reviews-next, .reviews-prev:hover {
+cursor: pointer;
+}
+
+.services_opacity_last_slide, .services_opacity_first_slide{
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 418px;
+}
+
+.services_opacity_first_slide{
+    background: linear-gradient(to right, rgba(249, 249, 249, 87%), rgba(255, 255, 255, 0%));
+}
+
+.services_opacity_last_slide{
+    right: 0px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0%), rgba(249, 249, 249, 87%));
+}

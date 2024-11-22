@@ -1,0 +1,371 @@
+html 
+    head 
+        title RADIANTWOOD 
+        link(rel="stylesheet", href="style/main.css")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap" rel="stylesheet")
+
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet")
+
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+
+    body
+
+        .header 
+        
+            .header_top 
+                .header_item 
+                    include sources/svg/phone.svg
+                    p +7 (916) 137-72-85
+                .menu_line 
+                .header_item
+                    include sources/svg/mail.svg
+                    p radiantwoodteam@gmail.com
+                .menu_line
+                .header_item
+                    include sources/svg/clock.svg  
+                    p пн-вс: 08:00-24:00
+
+            .header_bottom
+                .logo RADIANTWOOD
+                .header_menu
+                    ul 
+                        li 
+                            a(href="") О нас
+                        li 
+                            a(href="") Наши услуги
+                        li 
+                            a(href="") Этапы сотрудничества
+                        li 
+                            a(href="") Цены и тарифы 
+                .button 
+                    a(href="") Связаться с нами
+
+
+        .main_slide
+            .container 
+                .main_top
+                    .main_text_button
+                        h2 Ваш дом <br> в надежных руках!
+                        p Мы относимся к каждому проекту с особым <br> вниманием и заботой, вне зависимости от <br>его объема и стоимости.
+                        button.black Заказать проект
+
+                    .main_img 
+                        img(src="sources/decoration/Picture_main.png", alt="Пример работы")
+                .main_bottom
+                    .main_stats
+                        .stat 
+                            h1 8
+                            p Лет опыта
+
+                        .line
+
+                        .stat
+                            h1 &gt; 350
+                            p Реализованных проектов
+
+                        .line
+
+                        .stat
+                            h1 12
+                            p Сотрудников в штате
+
+                    .main_links 
+                        a(href="") 
+                            include sources/svg/telegram.svg 
+                        a(href="")
+                            include sources/svg/avito.svg 
+        hr
+
+
+        .about_slide
+            .container 
+                .about_slide_inside
+                    .about_left_part
+                        .heading_part
+                            .heading
+                                h1 О нас
+                                .stripe_yellow 
+                            .stripe_black
+                        .about_text Выбирая нас, вы выбираете <br>надежность, качество и <br>индивидуальный подход к <br>обработке вашего деревянного<br> дома. Доверьтесь профессионалам, <br>доверьтесь Radiantwood.
+                        .about_link 
+                            p Узнать больше
+                            a(href="")
+                                include sources/svg/plus.svg
+
+                    .about_right_part
+                        p Мы являемся компанией, которая предоставляет на рынок уникальную услугу по <br>деревообработке внутренних и наружных поверхностей деревянных домов. <br>Переводя на общедоступный язык - мы, на протяжении последних 8 лет, <br>профессионально шлифуем и красим деревянные дома. В целом это звучит просто, <br>но на деле это отнюдь не так просто.
+                        .about_images
+                            div    
+                                img(src="sources/decoration/Picture_house1.png", alt="")
+                            div
+                                img(src="sources/decoration/Picture_house2.png", alt="")
+        hr
+
+
+        .reviews_slide
+            .reviews_container
+                .reviews_slider 
+                    .slide 
+                    img(src="sources/reviews/review1.png", alt="")
+                    .slide 
+                    img(src="sources/reviews/review2.png", alt="")
+                    .slide 
+                    img(src="sources/reviews/review3.png", alt="")
+                    .slide
+                    img(src="sources/reviews/review4.png", alt="")
+                    .slide 
+                    img(src="sources/reviews/review5.png", alt="")
+                    .slide 
+                    img(src="sources/reviews/review6.png", alt="")
+                    .slide 
+                    img(src="sources/reviews/review7.png", alt="")
+                    .slide 
+                    img(src="sources/reviews/review8.png", alt="")
+                    .slide
+                    img(src="sources/reviews/review9.png", alt="")
+
+                
+        hr
+
+        .services_slide
+            .container
+                .heading 
+                    h1 Наши услуги
+                    .stripe_yellow
+
+                .services_block_1 
+                    .services_text 
+                        h4 Фасадные малярно- <br>шлифовальные работы <br>Особенности:
+                        ul 
+                            li Фасадные работы мы выполняем в период середины апреля до середины <br>сентября и берем объемы от 100м2 до 500м2 по фасаду
+                            li Фасадные работы мы проводим только с применением финишных укрывных <br>материалов. Укрывные краски, кроющие антисептики, укрывные грунты-<br>антиспетики.
+                            li Фасадные работы проводятся только при условии хорошей погоды.
+                            li Фасадные работы мы проводим только с услугой шлифовки, вне зависимости от состояния и новизны дерева.
+                            li Работаем с тур, деревянные леса нам не нужны.
+                    .services_slider  
+                            .slide
+                            .slide
+                            .slide
+                            .slide
+
+                .services_block_2 
+                    .services_slider 
+                            .slide
+                            .slide
+                            .slide
+                            .slide
+                    .services_text 
+                        h4 Внутренние малярно- <br>шлифовальные работы: <br>Особенности:
+                        ul 
+                            li Внутренние работы мы выполняем круглогодично и берем объемы от 60м2 <br>до 3000м2 по полу.
+                            li Внутренние работы мы проводим с применением любых материалов. <br>Укрывные материалы, масла, масла с воском, любые лессирующие <br>материалы.
+                            li Время года, погода и температура воздуха нам абсолютно не важны.
+                            li Внутренние работы под укрывные составы допустимы без шлифовки.<br> Лессирующие составы и масла-только со шлифовкой.
+
+
+                .services_block_3
+                    .services_text 
+                        h4 Обработка полов:
+                        ul 
+                            li Обрабатываем полы только в связке с работой по стенам и потолкам. <br>Отдельно полы готовим от 100м2
+                            li Полы готовим под укрывные краски, масло. Лаки в работу не берем.
+                    .services_slider 
+                            .slide
+                            .slide
+                            .slide
+                            .slide
+
+                .services_block_4 
+                    .services_slider 
+                                .slide
+                                .slide
+                                .slide
+                                .slide
+                    .services_text 
+                        h4 Обработка лестниц:
+                        ul 
+                            li Обрабатываем лестницы в связке с работой по стенам и потолкам. Без <br>исключений.
+                            li Лестницы готовим под укрывные составы, под масло, комбинированные.
+            
+        hr
+
+        .phases_slide
+            .container
+                .heading
+                    h1 Этапы сотрудничества
+                    .stripe_yellow 
+
+                .phase_1
+                    img(src="", alt="")
+                    .phase_text 
+                        h4 Телефонный звонок.
+                        p Для того, чтобы экономить наше и ваше время, мы с вами <br>связываемся в формате телефонного разговора, уточняем все <br>данные и в случае, если вас устраивает примерная стоимость <br>материалов, расходника и работ, которая вам будет понятна по <br>телефону, а у нас есть свободная запись, то мы отправляем вам в <br>мессенджер наше пригласительное письмо и переходим к <br>следующему шагу.
+                hr
+                .phase_2 
+                    img(src="", alt="")
+                    .phase_text 
+                        h4 Замер
+                        p В мессенджере мы договариваемся, когда и во сколько вам и нам <br>будет удобно встретиться и провести замер. Как правило — это <br>выходные. Наш замерщик приезжает к вам на объект, производит <br>замеры, составляет коммерческое предложение, и в ближайшие 2 <br>дня отправляет вам готовое и понятное КП с формой договора. <br>Далее вы даёте своё подтверждение, и мы переходим к <br>следующему шагу. Сразу же предупреждаем, что услуга платная. <br>Замер обойдется вам в 3000Р
+                hr
+                .phase_3 
+                    img(src="", alt="")
+                    .phase_text 
+                        h4 Договор
+                        p После подтверждения в течение 1 дня мы готовим вам <br>предзаполненный договор, отправляем вам его на рассмотрение и <br>после вашей проверки встречаемся в удобном для вас месте и его <br>подписываем. Очень важно, чтобы к этому времени у нас были <br>выбраны и утверждены все цвета, которые мы собираемся <br>использовать.
+                hr
+                .phase_4 
+                    img(src="", alt="")
+                    .phase_text 
+                        h4 Начало и конец работ
+                        p В зафиксированное число по договору мы приступаем к работам. В <br>финале каждого рабочего дня вы получаете отчеты: фото и <br>видеоматериалы с фиксацией процесса. По окончании всех работ <br>вы принимаете объект, мы подписываем отчетные документы, акт <br>сдачи-приемки и ваш дом встаёт на гарантию.
+
+        hr
+
+        .prices_slide
+            .container
+                .heading 
+                    h1 Цены и тарифы
+                    .stripe_yellow 
+                
+                .prices_block_line_1
+                    .prices_standart 
+                        .package 
+                            h3 Пакет стандарт
+                            p Данный пакет применим только к внутренним <br>работам*
+                            h5 Укрывные составы
+                        .price 
+                            h2 ₽700/м²
+                            p (без учета расходника и материала)
+                        hr
+                        .describe
+                            h5 В данный пакет входит:
+                            ul 
+                                li нанесение грунта антисептика безвоздушным <br>способом.
+                                li нанесение 2 слоев укрывного состава безвоздушным способом
+                                li дефектовка поверхностей
+                    .prices_comfort
+                        .package 
+                            h3 Пакет комфорт
+                            p Данный пакет применим к внутренним и фасадным <br>работам*
+                            h5 Укрывные составы
+                        .price 
+                            h2 ₽1150/м²
+                            p (без учета расходника и материала)
+                        hr
+                        .describe
+                            h5 В данный пакет входит:
+                            ul 
+                                li шлифовка поверхностей в 1 проход абразивом <br>фракции Р100/Р120
+                                li шпаклевание дефектов, сучков и трещин <br>толщиной до 5мм с последующей сошлифовкой.
+                                li герметизация трещин при необходимости.
+                                li 2-х фазное обеспыливание
+                                li дефектовка шлифовки
+                                li нанесение грунта-антисептика безвоздушным <br>способом
+                                li нанесение 2 слоев укрывного состава <br>безвоздушным способом
+                                li дефектовка поверхностей
+
+                .prices_block_line_2
+                    .prices_premium
+                        .package 
+                            h3 Пакет премиум
+                            p Данный пакет применим к внутренним и фасадным работам*
+                            h5 Укрывные составы
+                        .price 
+                            h2 ₽1400/м²
+                            p (без учета расходника и материала)
+                        hr
+                        .describe
+                            h5 В данный пакет входит:
+                            ul 
+                                li шлифовка поверхностей в 2 прохода абразивом фракций Р60/Р80 + Р100/Р120
+                                li шпаклевание дефектов, сучков и трещин толщиной до 5мм с последующей сошлифовкой.
+                                li герметизация трещин при необходимости.
+                                li 2-х фазное обеспыливание
+                                li дефектовка шлифовки
+                                li нанесение грунта антисептика безвоздугым способом
+                                li межслойная шлифовка абразивом фракции Р400
+                                li нанесение 2 слоев укрывного состава безвоздушным способом
+                                li дефектовка поверхностей
+
+                .prices_block_line_3
+                    .prices_oil 
+                        .package 
+                            h3 Масло, масло-воск, <br>лазурь
+                            p Данный пакет применим только к внутренним <br>работам*
+                        .price 
+                            h2 ₽700/м²
+                            p (без учета расходника и материала)
+                        hr
+                        .describe
+                            ul 
+                                li шлифовка поверхностей в 2 прохода абразивом <br>фракций Р60/Р80 + Р100/Р120
+                                li 3-х фазное обеспыливание
+                                li нанесение грунта антисептика безвоздушным способом.
+                                li нанесение 2 слоев масла/масла с воском/лазури <br>контактным способом с втиранием материала в <br>рабочую плоскость микрофибрами
+                                li проход плоскости собирающими микрофибрами.
+                                li дефектовка поверхности
+                    .prices_water
+                        .package 
+                            h3 Лессирующие составы <br>на водной основе.
+                            p Данный пакет применим только к внутренним <br>работам*
+                        .price 
+                            h2 ₽700/м²
+                            p (без учета расходника и материала)
+                        hr
+                        .describe
+                            ul 
+                                li нанесение грунта антисептика безвоздушным <br>способом.
+                                li нанесение 2 слоев лессирующего состава <br>контактным способом.
+                                li проход плоскости собирающими микрофибрами.
+                                li дефектовка поверхности
+
+                .prices_block_line_4
+                    .prices_accompanying
+                        .package 
+                            h3 Сопутствующие работы.
+                            p Данный пакет применим к внутренним и фасадным <br>работам*
+                        .prices 
+                            ul 
+                                li обработка торцов на <br>профилированном и клееном <br>брусе 
+                                li обработка оконных коробок, <br>обналичников, лобовой доски, <br>поднебесников
+                                li Защита неокрашиваемых <br>элементов
+                                li Защита финишных полов
+                                li Доставка тур, вышек, <br>коленчатых подъёмников
+
+                    .prices_additional
+                        .package
+                            h3 Дополнительные <br>работы:
+                        .prices 
+                            ul 
+                                li Обработка полов. 
+                                li Обработка лестниц.
+                                li Обработка погонажа.
+                                li Декоративный канат.
+                                li Консервация фасада.
+
+                
+                    
+
+        .footer
+            .container_footer
+                ul 
+                    li
+                        .footer_number 
+                            include sources/svg/phone.svg 
+                            p +7 (495) 999-26-64
+                        .footer_logo 
+                            h4  RADIANTWOOD
+                            p (c)
+                        .footer-soc-net 
+                            include sources/svg/telegram.svg 
+                            include sources/svg/avito.svg 
+
+        // - scripts 
+            //- slick 
+        script(src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+            // - myscripts
