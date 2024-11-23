@@ -601,6 +601,6 @@ h5{
 .footer_logo p:nth-child(2){
     margin-left: 4px;
 }
-.footer-soc-net svg:nth-child(2){
+.footer-soc-net a:nth-child(2){
     margin-left: 18px;
 }
