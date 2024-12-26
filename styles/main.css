@@ -8,6 +8,7 @@ body{
     font-family: "Inter", sans-serif;
     font-size: 16px;
     overflow-x: hidden;
+    
 }
 
 hr{
@@ -173,7 +174,6 @@ h5{
 /* FIRST-SLIDE */
 
 .main_slide{
-    width: 100%;
     position: relative;
     margin-top: 154px;
     margin-bottom: 70px;
@@ -181,11 +181,22 @@ h5{
     justify-content: center;
 }
 
-.main_slide p{
-    font-size: 20px;
-    
+@media (max-width: 1024px) {
+    .main_slide{
+        display: flex;
+        justify-content: safe center;
+    }
 }
 
+.main_slide p{
+    font-size: 20px;
+}
+@media (max-width: 1440px) {
+    .main_slide p{
+        font-size: 1.39vw;
+        
+    }
+}
 .main_top{
     display: flex;
     justify-content: space-around;
@@ -239,7 +250,7 @@ h5{
 }
 
 .stat p:nth-child(1){
-    font-size: 64px;
+    font-size: 3.33vw;
     color: #337294;
     font-weight: 500;
 }
@@ -253,9 +264,15 @@ h5{
 
 .main_links{
     margin-top: 84px;
+    min-width: 120.5px;
 }
 
-
+.main_telegram svg{
+    min-width: 24px;
+}
+.main_avito svg{
+    min-width: 92px;
+}
 /*  ABOUT  */
 
 .about_slide{
@@ -331,6 +348,7 @@ h5{
 }
 
 /* SERVICES */
+/* SERVICES */
 .services_slide{
     display: flex;
     flex-direction: column;
@@ -340,6 +358,17 @@ h5{
 .container_services_left{
     margin-right: 40px;
     margin-left: 40px;
+    width: 100%; /* Добавлено для корректной работы flexbox */
+}
+@media (max-width: 1040px) {
+    .services_block_1, .services_block_2, .services_block_3, .services_block_4{
+        display: flex;
+        justify-content: safe center;
+        flex-wrap: wrap;
+    }
+    .services_block_1 > *, .services_block_2 > *, .services_block_3 > *, .services_block_4 > * { /* Изменено: nth-child заменено на > * для выбора прямых потомков */
+        flex: 1 1 266.66px;
+    }
 }
 .services_block_1{
     margin-top: 190px ;
@@ -347,16 +376,27 @@ h5{
     display: flex;
 }
 
+.services_text { /* Добавлено для всех блоков с текстом */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание текста по левому краю */
+}
 .services_text p{
+    min-width: 500px;
+    max-width: 550px;
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 44px;
 }
 
+.services_text ol { /* Стили для упорядоченного списка */
+    margin: 0; /* Обнуляем отступ по умолчанию */
+    padding: 0; /* Обнуляем отступ по умолчанию */
+}
+
 .services_text li{
     color: #282828;
     margin-bottom: 11px;
-    margin-left: 20px;
     font-size: 14px;
     line-height: 22px;
 }
@@ -383,6 +423,24 @@ h5{
     margin-right: 155px;
 }
 
+@media (max-width: 1370px) {
+    .container{
+        width: 95%;
+    }
+    .services_block_1, .services_block_2, .services_block_3, .services_block_4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Центрирование по горизонтали */
+    }
+    .services_block_1 .services_text, .services_block_3 .services_text{
+        margin-bottom: 40px;
+        text-align: center; /* Центрирование текста */
+    }
+    .services_block_2 .services_text, .services_block_4 .services_text{
+        margin-top: 40px;
+        text-align: center; /* Центрирование текста */
+    }
+}
 
 /* FHASES */
 .phases_slide{
@@ -567,6 +625,7 @@ h5{
 .footer{
     height: 103px;
     width: 100%;
+    min-width: 1920px;
     background-color: #282828;
     display: flex;
     flex-direction: column;

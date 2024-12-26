@@ -28,6 +28,18 @@
     line-height: 32px;
     font-family: "Inter", sans-serif;
 }
+
 .info{
     margin-left: 163px;
+    min-width: 702px;
+}
+
+@media (max-width: 1440px) {
+    .info{
+        font-size: 1.67vw;
+        min-height: 690px;
+    }
+    .container_about{
+        justify-content: safe center;
+    }
 }
